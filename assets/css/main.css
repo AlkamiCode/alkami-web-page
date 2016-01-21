@@ -2233,11 +2233,6 @@
 		  margin: 0;
 		}
 
-		textarea#message {
-			margin-top: 20px;
-			margin-left: 3%;
-		}
-
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -4009,3 +4004,8 @@
 					}
 
 	}
+
+section#five {
+	padding-right: 10%;
+	padding-left: 10%;
+}
