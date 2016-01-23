@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/js/monolog.js-master/dist/monolog.css">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -25,6 +26,7 @@
 									<li><a href="snake.html">Snake</a></li>
 								</ul>
 							</li>
+							<li><a href="javascript:;" onclick="monolog.show();">Contact Us</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -33,9 +35,13 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>The future has Arrived</h2>
-							<p>And there are no hoverboards or flying cars.<br />
-							Just apps. Lots of mother flipping apps.</p>
+							<h2></h2>
+							<p>Design, in its broadest sense,<br />
+							is the enabler of the digital era,<br />
+							it's a process that creates order out of chaos,<br />
+							that renders technology usable to business.<br />
+							Design means being good, not just looking good.<br />
+							 – Clement Mok</p>
 						</header>
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
@@ -235,13 +241,28 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/logo-hover.js"></script>
+
+			<script src="assets/js/monolog.js-master/dist/monolog.js"></script>
 			<script>
-				function hover(element) {
-				    element.setAttribute('src', 'images/logo_gold.png');
-				}
-				function unhover(element) {
-				    element.setAttribute('src', 'images/logo_white.png');
-				}
+				var monolog = new Monolog({
+					loader  : false,
+					close: true,
+					onOpening: function() {
+						console.log('OPENING ...');
+					},
+					onOpened: function() {
+						console.log('... OPENED !');
+						debugger;
+						this.setContent('<h1 style="text-align: center;">! Opened !</h1>');
+					},
+					onClosing: function() {
+						console.log('CLOSING ...');
+					},
+					onClosed : function () {
+						console.log('... CLOSED !');
+					}
+				});
 			</script>
 
 	</body>
