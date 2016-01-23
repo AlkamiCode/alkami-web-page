@@ -83,7 +83,7 @@
 		onOpening();
 
 		// Initialize time
-		time = (time === undefined) ? 300 : time;
+		time = (time === undefined) ? 500 : time;
 
 		// Set fade class and opacity to Monolog
 		$monolog.setAttribute('class', 'monolog monolog-fade-in');
