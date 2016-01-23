@@ -3478,6 +3478,16 @@
 				font-size: 13pt;
 			}
 
+			.wrapper {
+				margin-left: 2%;
+				margin-right: 2%;
+				margin-top: 1%;
+			}
+
+			#main {
+				padding-top: 2%;
+			}
+
 	}
 
 /* Large */
