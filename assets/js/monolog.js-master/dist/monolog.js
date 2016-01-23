@@ -21,16 +21,6 @@
 	 |--------------------------------------------------------------------------
 	 */
 
-	/**
-	 * Monolog constructor.
-	 *
-	 * @constructor
-	 * @access  public
-	 * @param   {Array} params The list of params
-	 * @author  Clément DOUIN clementdouin21@gmail.com
-	 * @since   1.0.0
-	 * @version 1.1.0
-	 */
 	var Monolog = function (params) {
 
 		// If no params, leave
@@ -67,34 +57,10 @@
 		$monolog.style.opacity = 0;
 	};
 
-	/*
-	 |--------------------------------------------------------------------------
-	 | Private methods
-	 |--------------------------------------------------------------------------
-	 */
-
-	/**
-	 * Empty function, used for initialisation.
-	 *
-	 * @access  private
-	 * @author  Clément DOUIN clementdouin21@gmail.com
-	 * @since   1.0.0
-	 * @version 1.1.0
-	 */
 	function emptyFunction() {
 		// Nothing to do here.
 	}
 
-	/**
-	 * Parse HTML into DOM Element.
-	 *
-	 * @access  private
-	 * @params  {string} html The HTML to parse into DOM Element
-	 * @return  Element|string
-	 * @author  Clément DOUIN clementdouin21@gmail.com
-	 * @since   1.0.0
-	 * @version 1.1.0
-	 */
 	function parseElement(html) {
 
 		// If no html, leave
@@ -108,21 +74,6 @@
 		return wrapper.firstElementChild;
 	}
 
-	/*
-	 |--------------------------------------------------------------------------
-	 | Public methods
-	 |--------------------------------------------------------------------------
-	 */
-
-	/**
-	 * Show Monolog with fade.
-	 *
-	 * @access  public
-	 * @param   {number} time The fade time in ms
-	 * @author  Clément DOUIN clementdouin21@gmail.com
-	 * @since   1.0.0
-	 * @version 1.1.0
-	 */
 	Monolog.prototype.show = function (time) {
 
 		// If opacity > 0, leave
@@ -155,15 +106,6 @@
 		}).bind(this), time);
 	};
 
-	/**
-	 * Hide Monolog with fade.
-	 *
-	 * @access  public
-	 * @param   {number} time The fade time in ms
-	 * @author  Clément DOUIN clementdouin21@gmail.com
-	 * @since   1.0.0
-	 * @version 1.1.0
-	 */
 	Monolog.prototype.hide = function (time) {
 
 		// If opacity < 1, leave
@@ -193,27 +135,11 @@
 		}).bind(this), time);
 	};
 
-	/**
-	 * Close Monolog with same fade that has been used for open it.
-	 *
-	 * @access  public
-	 * @author  Clément DOUIN clementdouin21@gmail.com
-	 * @since   1.0.0
-	 * @version 1.1.0
-	 */
 	Monolog.prototype.close = function () {
 		respectiveClose();
 	};
 
-	/**
-	 * Set new content to Monolog.
-	 *
-	 * @access  public
-	 * @param   {string} content The new content
-	 * @author  Clément DOUIN clementdouin21@gmail.com
-	 * @since   1.0.0
-	 * @version 1.1.0
-	 */
+
 	Monolog.prototype.setContent = function (content) {
 		$subContainer.innerHTML = String(content).trim();
 	};
