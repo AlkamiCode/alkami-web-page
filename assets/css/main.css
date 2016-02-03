@@ -2468,7 +2468,6 @@
 		}
 
 		.image img {
-			border-radius: 4px;
 			display: block;
 		}
 
@@ -2494,7 +2493,7 @@
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 1em 0;
 			width: 100%;
 		}
 
@@ -4018,4 +4017,8 @@
 section#five {
 	padding-right: 10%;
 	padding-left: 10%;
+}
+
+#ad-quote {
+	margin-top: 3%;
 }
