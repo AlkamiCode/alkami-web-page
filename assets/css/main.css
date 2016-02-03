@@ -14,7 +14,6 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
-		margin-top: 5%;
 	}
 
 	body {
@@ -154,6 +153,10 @@
 
 		.container {
 			width: 100% !important;
+		}
+
+		#main {
+			padding-top: 10%;
 		}
 
 	}
@@ -3485,7 +3488,7 @@
 			}
 
 			#main {
-				padding-top: 5%;
+				padding-top: 1%;
 			}
 
 	}
@@ -4022,4 +4025,10 @@ section#five {
 
 #ad-quote {
 	margin-top: 3%;
+}
+
+@media screen and (max-width: 980px) {
+	#main {
+    padding-top: 10%;
+	}
 }
