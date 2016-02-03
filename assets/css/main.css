@@ -2497,7 +2497,7 @@
 
 		.image.fit {
 			display: block;
-			margin: 0 0 1em 0;
+			margin: 0 0 .5em 0;
 			width: 100%;
 		}
 
@@ -4029,6 +4029,6 @@ section#five {
 
 @media screen and (max-width: 980px) {
 	#main {
-    padding-top: 10%;
+    padding-top: 5%;
 	}
 }
