@@ -3763,7 +3763,7 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				height: 54px;
+				height: 60px;
 				left: 0;
 				position: fixed;
 				top: 0;
@@ -3813,9 +3813,9 @@
 						content: '\f0c9';
 						display: block;
 						font-size: 20px;
-						height: 54px;
+						height: 60px;
 						left: 0;
-						line-height: 44px;
+						line-height: 60px;
 						position: absolute;
 						text-align: center;
 						top: 0;
@@ -4030,5 +4030,9 @@ section#five {
 @media screen and (max-width: 980px) {
 	#main {
     padding-top: 5%;
+	}
+
+	#navPanel > nav > .link:nth-last-child(1) {
+		display: none;
 	}
 }
