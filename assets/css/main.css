@@ -103,6 +103,9 @@
 			/*width: 70em;*/
 		}
 
+		nav#nav > ul > li:nth-child(2) {
+			display: none;
+		}
 	}
 
 	@media screen and (max-width: 1280px) {
