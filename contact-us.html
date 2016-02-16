@@ -10,7 +10,7 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
   </head>
-  <body>
+  <body class="landing">
     <div id="page-wrapper">
 
       <!-- Header -->
@@ -33,56 +33,57 @@
           </nav>
         </header>
 
-      <!-- Main -->
-        <div id="main" class="wrapper style1">
+      <!-- Five -->
+        <section id="five" class="wrapper style2 special fade">
           <div class="container">
-            <div class="row 150%">
-              <div class="4u 12u$(medium)">
+            <header>
+              <h2>Contact Us</h2>
+            </header>
+              <form method="post" action="http://formspree.io/info@alkami.io">
+                  <div class="row uniform 50%">
+                    <div class="6u 12u$(xsmall)">
+                      <input type="number" number="number" id="number" value="" placeholder="Phone Number" />
+                    </div>
+                    <div class="6u$ 12u$(xsmall)">
+                      <input type="email" name="email" id="email" value="" placeholder="Email" />
+                    </div>
+                    <div class="6u 12u$(xsmall)">
+                      <input type="text" name="name" id="username" value="" placeholder="Name" />
+                    </div>
+                    <div class="6u$ 12u$(xsmall)">
+                      <div class="select-wrapper">
+                        <select name="category" id="category">
+                          <option value="">- Category -</option>
+                          <option value="1">Web Site</option>
+                          <option value="1">Web App</option>
+                          <option value="1">API</option>
+                          <option value="1">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="6u$ 12u$(medium)">
+                      <input type="checkbox" id="human" name="human">
+                      <label for="human">I am a human and not a robot</label>
+                    </div>
+                    <div class="12u$">
+                      <textarea name="message" id="message" placeholder="Tell us a little about your project..." rows="6"></textarea>
+                    </div>
 
-                <!-- Sidebar -->
-                  <section id="sidebar">
-                      <a href="#" class="image fit"><img alt="" /></a>
-                    <section>
-                      <h3>Surf Engine</h3>
-                      <p>Surf Engine is the worlds first search engine for North American surfing spots, some of the features of this app:
-                      </p>
-                      <ul>
-                        <li>User login with Facebook</li>
-                        <li>Google Maps Integration</li>
-                        <li>Social Media sharing</li>
-                        <li>Filter surf spots by experience level or spot name</li>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_next" value="/" />
+                    <input type="hidden" name="_subject" value="Home Page Form" />
+
+                    <div class="12u$">
+                      <ul class="actions">
+                        <li><input type="submit" value="Send" class="special" /></li>
+                        <li><input type="reset" value="Reset" /></li>
                       </ul>
-                    </section>
-                    <hr />
-                    <section>
-                      <h3>Technical (Geek-Out!) Specs</h3>
-                        <ul>
-                          <li>Ruby on Rails</li>
-                          <li>JavaScript, JQuery, Twitter Bootstrap on the Front-End</li>
-                          <li>All app routing is Restful</li>
-                          <li>Unit tested using RSpec, and feature tested using Capybara</li>
-                          <li>Real time search filters</li>
-                        </ul>
-                      <footer>
-                        <ul class="actions">
-                          <li><a href="http://surf-engine.herokuapp.com" target="_blank" class="button">Visit App</a></li>
-                        </ul>
-                      </footer>
-                    </section>
-                  </section>
+                    </div>
+                  </div>
+                </form>
 
-              </div>
-              <div class="8u$ 12u$(medium) important(medium)">
-                <!-- Content -->
-                  <section id="content">
-                    <a href="#" class="image fit"><img src="images/surf-engine-home-page.png" alt="" /></a>
-                    <a href="#" class="image fit"><img src="images/surf-engine-begin-searching.png" alt="" /></a>
-                    <a href="#" class="image fit"><img src="images/surf-engine-spot-location.png" alt="" /></a>
-                  </section>
-              </div>
-            </div>
           </div>
-        </div>
+        </section>
 
       <!-- Footer -->
         <footer id="footer">
@@ -108,6 +109,5 @@
       <script src="assets/js/logo-hover.js"></script>
       <script src="assets/js/monolog.js-master/dist/monolog.js"></script>
       <script src="assets/js/contact-modal.js"></script>
-
   </body>
 </html>
